@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+void arsenal();
+
 
 int main() {
     int opcao;
@@ -24,6 +26,7 @@ int main() {
         switch (opcao) {
             case 1:
                 printf("\n>> Entrando no Arsenal...\n");
+                arsenal()
                 break;
             case 2:
                 printf("\n>> Entrando na Enfermaria...\n");
@@ -46,5 +49,11 @@ int main() {
 
     } while (opcao != 0);
 
+
+
+    //*implementando arsenal */
+    void arsenal(){
+        print("Em desenvolvimento");
+        }
     return 0;
 }

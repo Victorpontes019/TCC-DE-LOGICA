@@ -1,11 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-void arsenal();
+//Declaroções globais de structs
+
+struct {
+    char[50] nome;
+    float valor;
+}Arsenal;
+
+Arsenal catalogo();
 
 
 int main() {
     int opcao;
-
+    
     do {
         system("clear || cls");
 
@@ -26,7 +33,7 @@ int main() {
         switch (opcao) {
             case 1:
                 printf("\n>> Entrando no Arsenal...\n");
-                arsenal()
+                catalogo();
                 break;
             case 2:
                 printf("\n>> Entrando na Enfermaria...\n");
@@ -52,8 +59,9 @@ int main() {
 
 
     //*implementando arsenal */
-    void arsenal(){
-        print("Em desenvolvimento");
+    Arsenal arsenal(){
+        printf("Em desenvolvimento");
+        
         }
     return 0;
 }
